@@ -18,6 +18,20 @@ func main() {
 	num := rand.Intn(100)
 
 	// TODO: 変数numが0〜79のときは"ノーマル"、
+	if 0 <= num && num <= 79 {
+		fmt.Println(num)
+		fmt.Println("N")
+	} else if 80 <= num && num <= 94 {
+		fmt.Println(num)
+		fmt.Println("R")
+	} else if 95 <= num && num <= 98 {
+		fmt.Println(num)
+		fmt.Println("SR")
+	} else {
+		fmt.Println(num)
+		fmt.Println("XR")
+	}
+
 	// 80〜94のときは"R"、95〜98のときは"SR"、
 	// それ以外のときは"XR"と表示する
 }

@@ -18,5 +18,10 @@ func main() {
 	num := rand.Intn(2)
 
 	// TODO: 変数numが0のときに"アタリ"と表示し
+	if num == 0 {
+		fmt.Println("アタリ")
+	} else {
+		fmt.Println("ハズレ")
+	}
 	// そうでない場合は"ハズレ"と表示する
 }
